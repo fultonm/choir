@@ -18,7 +18,8 @@ ADD YOUR FILE NAME HERE (without the .py extension):
 #
 MODULES = [
     first_example,
-    second
+    second,
+    alex_lyric
 ]
 #
 # pylint: enable=undefined-variable
