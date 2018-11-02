@@ -16,7 +16,10 @@ ADD YOUR FILE NAME HERE (without the .py extension):
 """
 # pylint: disable=undefined-variable
 #
-MODULES = [first, second]
+MODULES = [
+    first_example,
+    second
+]
 #
 # pylint: enable=undefined-variable
 """
@@ -28,20 +31,9 @@ will appear as an error
 
 def main():
     for module in MODULES:
-        print(module.sing())
-        sleep(0.200)
-    print('\n\n')
-
-def credits():
-    first = True
-    for module in MODULES:
-        if first:
-            print('Brought to you by: ' + module.credit())
-        else:
-            print('And by: ' + module.credit())
-        first = False
+        print(module.sing() + ' - ' + module.credit())
         sleep(0.500)
+    print('\n\n')
 
 if __name__ == '__main__':
     main()
-    credits()
