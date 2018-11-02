@@ -19,7 +19,7 @@ ADD YOUR FILE NAME HERE (without the .py extension):
 MODULES = [
     first_example,
     second,
-    husciicoder_lyrics_add
+    gordon
 ]
 #
 # pylint: enable=undefined-variable
